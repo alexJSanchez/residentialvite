@@ -61,6 +61,7 @@ function App() {
                             <img src={item.image} alt={`Image of ${item.Super}`} className="result-image" />
                             <h4>{item.Super}</h4>
                             <h3>{item.Address}</h3>
+                            <a href={`tel:${item.super_cell}`}>{item.super_cell}</a>
                             <h5>{item.Super_Cell}</h5>
                             <h5>{item.Super_Phone}</h5>
                         </div> // Ensure each item has a unique key
