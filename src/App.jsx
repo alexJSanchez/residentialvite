@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import residential from "./residentials"; // Assuming this is your data
-import './App.css'
-
+import './App.css';
+const phone = "\u{260E}";
+const cellPhone = "\u{1F4F1}"
 function App() {
-  const [search, setSearch] = useState(''); 
+    const [search, setSearch] = useState(''); 
     const [searchResult, setSearchResult] = useState([]); // Initialize as an empty array
 
     // Search function for both address and name
@@ -55,16 +56,21 @@ function App() {
 
             {/* Display search results */}
             <div className="results-container">
-                {searchResult.length > 0 ? (    
-                    searchResult.map((item, index) => (
-                        <div key={index} className="result-card">
+                {searchResult.length > 0 ? (
+                    searchResult.map((item) => (
+                        <div key={`${item.Address}-${item.Super}`} className="result-card"> {/* Use a unique key */}
                             <img src={item.image} alt={`Image of ${item.Super}`} className="result-image" />
                             <h4>{item.Super}</h4>
                             <h3>{item.Address}</h3>
-                            <a href={`tel:${item.super_cell}`}>{item.super_cell}</a>
-                            <h5>{item.Super_Cell}</h5>
-                            <h5>{item.Super_Phone}</h5>
-                        </div> // Ensure each item has a unique key
+                            <div>
+                              {cellPhone}
+                              <a href={`tel:${item.Super_Cell}`}>{item.Super_Cell}</a> {/* Clickable phone link */}
+                            </div>
+                            <div>
+                              {phone}
+                              <a href={`tel:${item.Super_Phone}`}>{item.Super_Phone}</a> {/* Clickable phone link */}
+                            </div>
+                        </div>
                     ))
                 ) : (
                     <p>No results found.</p> // Display message if no results are found
@@ -74,4 +80,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
