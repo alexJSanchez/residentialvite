@@ -4,80 +4,86 @@ import './App.css';
 const phone = "\u{260E}";
 const cellPhone = "\u{1F4F1}"
 function App() {
-    const [search, setSearch] = useState(''); 
-    const [searchResult, setSearchResult] = useState([]); // Initialize as an empty array
+  const [search, setSearch] = useState('');
+  const [searchResult, setSearchResult] = useState([]); // Initialize as an empty array
 
-    // Search function for both address and name
-    function searchProperties(query) {
-        const lowerCaseQuery = query.toLowerCase();
-        const uniqueProperties = new Set();
+  // Search function for both address and name
+  function searchProperties(query) {
+    const lowerCaseQuery = query.toLowerCase();
+    const uniqueProperties = new Set();
 
-        const filteredResults = residential.filter(property => {
-            const lowerCaseAddress = property.Address.toLowerCase();
-            const lowerCaseSuper = property.Super.toLowerCase(); // Assuming 'Super' is the name field
-            
-            const matchesAddress = lowerCaseAddress.includes(lowerCaseQuery);
-            const matchesName = lowerCaseSuper.includes(lowerCaseQuery);
+    const filteredResults = residential.filter(property => {
+      const lowerCaseAddress = property.Address.toLowerCase();
+      const lowerCaseSuper = property.Super.toLowerCase(); // Assuming 'Super' is the name field
 
-            const uniqueKey = `${property.Address}-${property.Super}`;
+      const matchesAddress = lowerCaseAddress.includes(lowerCaseQuery);
+      const matchesName = lowerCaseSuper.includes(lowerCaseQuery);
 
-            if ((matchesAddress || matchesName) && !uniqueProperties.has(uniqueKey)) {
-                uniqueProperties.add(uniqueKey); // Add the unique key to the Set
-                return true; // Include in filtered result
-            }
-            
-            return false; // Exclude if it's a duplicate
-        });
+      const uniqueKey = `${property.Address}-${property.Super}`;
 
-        return filteredResults; // Return the filtered results
-    }
+      if ((matchesAddress || matchesName) && !uniqueProperties.has(uniqueKey)) {
+        uniqueProperties.add(uniqueKey); // Add the unique key to the Set
+        return true; // Include in filtered result
+      }
 
-    function HandleSubmit(e) {
-        e.preventDefault();
-        const searchQuery = e.target.searchName.value;
-        const result = searchProperties(searchQuery); // Use the updated search function
-        setSearchResult(result); // Set searchResult with the result of the search
-    }
+      return false; // Exclude if it's a duplicate
+    });
 
-    console.log(searchResult);
+    return filteredResults; // Return the filtered results
+  }
 
-    return (
-        <div>
-            <form className="searchForm" onSubmit={HandleSubmit}>
-                <label>Search</label>
-                <input 
-                    type="text" 
-                    name="searchName" 
-                    value={search} 
-                    onChange={(e) => setSearch(e.target.value)} // Updates state for input value
-                />
-                <button type="submit">Submit</button>
-            </form>
+  function HandleSubmit(e) {
+    e.preventDefault();
+    const searchQuery = e.target.searchName.value;
+    const result = searchProperties(searchQuery); // Use the updated search function
+    setSearchResult(result); // Set searchResult with the result of the search
+  }
 
-            {/* Display search results */}
-            <div className="results-container">
-                {searchResult.length > 0 ? (
-                    searchResult.map((item) => (
-                        <div key={`${item.Address}-${item.Super}`} className="result-card"> {/* Use a unique key */}
-                            <img src={item.image} alt={`Image of ${item.Super}`} className="result-image" />
-                            <h4>{item.Super}</h4>
-                            <h3>{item.Address}</h3>
-                            <div>
-                              {cellPhone}
-                              <a href={`tel:${item.Super_Cell}`}>{item.Super_Cell}</a> {/* Clickable phone link */}
-                            </div>
-                            <div>
-                              {phone}
-                              <a href={`tel:${item.Super_Phone}`}>{item.Super_Phone}</a> {/* Clickable phone link */}
-                            </div>
-                        </div>
-                    ))
-                ) : (
-                    <p>No results found.</p> // Display message if no results are found
-                )}
+  console.log(searchResult);
+
+  return (
+    <div>
+      <form className="searchForm" onSubmit={HandleSubmit}>
+        <label>Search</label>
+        <input
+          type="text"
+          name="searchName"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)} // Updates state for input value
+        />
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* Display search results */}
+      <div className="results-container">
+        {searchResult.length > 0 ? (
+          searchResult.map((item) => (
+            <div key={`${item.Address}-${item.Super}`} className="result-card"> {/* Use a unique key */}
+              <img src={item.image} alt={`Image of ${item.Super}`} className="result-image" />
+              <h4>{item.Super}</h4>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.Address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>{item.Address}</h3>
+              </a>
+              <div>
+                {cellPhone}
+                <a href={`tel:${item.Super_Cell}`}>{item.Super_Cell}</a> {/* Clickable phone link */}
+              </div>
+              <div>
+                {phone}
+                <a href={`tel:${item.Super_Phone}`}>{item.Super_Phone}</a> {/* Clickable phone link */}
+              </div>
             </div>
-        </div>
-    );
+          ))
+        ) : (
+          <p>No results found.</p> // Display message if no results are found
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default App;
