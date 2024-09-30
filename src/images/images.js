@@ -35,6 +35,7 @@ import Cirino_William from "../images/Cirino_William.jpeg"
 import Santamaria_Ricardo from "../images/Santamaria_Ricardo.jpg"
 import Kore_Denis from "../images/Kore_Denis.jpg"
 import Mero_Hugo from "../images/Mero_Hugo.jpg"
+import Hogan_Hall from "../images/Hogan_Hall.jpg"
 
 
 
@@ -74,6 +75,7 @@ export const images = {
     Cirino_William,
     Santamaria_Ricardo,
     Kore_Denis,
-    Mero_Hugo
+    Mero_Hugo,
+    Hogan_Hall
     // Add more images as needed
 };

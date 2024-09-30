@@ -76,6 +76,19 @@ function App() {
                 {phone}
                 <a href={`tel:${item.Super_Phone}`}>{item.Super_Phone}</a> {/* Clickable phone link */}
               </div>
+              <hr></hr>
+              <div>
+                <h3>Backup Super</h3>
+                <h4>{item.Backup_Super}</h4>
+                <div>
+                  {phone}
+                  <a href={`tel:${item.Super_Phone}`}>{item.Backup_Super_Cell}</a> {/* Clickable phone link */}
+                </div>
+                <div>
+                  {phone}
+                  <a href={`tel:${item.Super_Phone}`}>{item.Backup_Super_Phone}</a> {/* Clickable phone link */}
+                </div>
+              </div>
             </div>
           ))
         ) : (

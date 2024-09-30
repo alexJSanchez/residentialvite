@@ -4189,7 +4189,88 @@ const residential = [
         Backup_Super_Cell: "(347) 668-6081",
         Admin: "Ramirez, Laura",
         image: images.Vujnovic_Mike
-    }
+    },
+    {
+        Address: "Hogan Hall",
+        Super: "Ifran, Krcic",
+        Super_Phone: "212-851-1479",
+        Super_Cell: "646-761-0389",
+        Backup_Super: "Christina, Kirton",
+        Backup_Super_Phone: "(646) 996-4833",
+        Backup_Super_Cell: "(646) 996-4833",
+        image: images.No_Photo
+    },
+    {
+        Address: "Low Library",
+        Super: "Ifran, Krcic",
+        Super_Phone: "212-851-1479",
+        Super_Cell: "646-761-0389",
+        Backup_Super: "Juan, Almonte",
+        Backup_Super_Phone: "(646) 966-4741",
+        Backup_Super_Cell: "(646) 966-4741",
+        image: images.No_Photo
+    },
+    {
+        Address: "Watson",
+        Super: "Ifran, Krcic",
+        Super_Phone: "212-851-1479",
+        Super_Cell: "646-761-0389",
+        Backup_Super: "Juan, Almonte",
+        Backup_Super_Phone: "(646) 966-4741",
+        Backup_Super_Cell: "(646) 966-4741",
+        image: images.No_Photo
+    },
+    {
+        Address: "Butler",
+        Super: "Ifran, Krcic",
+        Super_Phone: "212-851-1479",
+        Super_Cell: "646-761-0389",
+        Backup_Super: "Christina, Kirton",
+        Backup_Super_Phone: "(646) 996-4833",
+        Backup_Super_Cell: "(646) 996-4833",
+        image: images.No_Photo
+    },
+    {
+        Address: "Casa Hispanica",
+        Super: "Ifran, Krcic",
+        Super_Phone: "212-851-1479",
+        Super_Cell: "646-761-0389",
+        Backup_Super: "Christina, Kirton",
+        Backup_Super_Phone: "(646) 996-4833",
+        Backup_Super_Cell: "(646) 996-4833",
+        image: images.No_Photo
+    },
+    {
+        Address: "Sipa",
+        Super: "Nobel, Garcia",
+        Super_Phone: "646-990-1119",
+        Super_Cell: "646-990-1119",
+        Backup_Super: "Rebbecca Lopez",
+        Backup_Super_Phone: "(646) 299-3189",
+        Backup_Super_Cell: "(646) 299-3189",
+        image: images.No_Photo
+    },
+    {
+        Address: "Jerome Greene, (Law School)",
+        Super: "Nobel, Garcia",
+        Super_Phone: "646-990-1119",
+        Super_Cell: "646-990-1119",
+        Backup_Super: "Rebbecca Lopez",
+        Backup_Super_Phone: "(646) 299-3189",
+        Backup_Super_Cell: "(646) 299-3189",
+        image: images.No_Photo
+    },
+    {
+        Address: "William & June Warren (Business Law)",
+        Super: "Nobel, Garcia",
+        Super_Phone: "646-990-1119",
+        Super_Cell: "646-990-1119",
+        Backup_Super: "Carlos Polanco ",
+        Backup_Super_Phone: "(646) 996-4797",
+        Backup_Super_Cell: "(646) 996-4797",
+        image: images.No_Photo
+    },
+
 ]
 
 export default residential
