@@ -68,6 +68,8 @@ function App() {
               >
                 <h3>{item.Address}</h3>
               </a>
+              <h4>{item.Shift}</h4>
+              <h5>{item.Hours}</h5>
               <div>
                 {cellPhone}
                 <a href={`tel:${item.Super_Cell}`}>{item.Super_Cell}</a> {/* Clickable phone link */}

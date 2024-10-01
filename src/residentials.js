@@ -4191,7 +4191,7 @@ const residential = [
         image: images.Vujnovic_Mike
     },
     {
-        Address: "Hogan Hall",
+        Address: "Hogan",
         Shift: "1st shift",
         Hours: "6am-1pm",
         Super: "Ifran, Krcic",
@@ -4311,7 +4311,7 @@ const residential = [
         image: images.No_Photo
     },
     {
-        Address: "Shermerhorn",
+        Address: "Schermerhorn",
         Shift: "3rd shift",
         Hours: "10pm-3am",
         Super: "Lenny Reynoso",
@@ -4371,7 +4371,7 @@ const residential = [
         image: images.No_Photo
     },
     {
-        Address: "Hogan Hall",
+        Address: "Hogan",
         Shift: "1st shift",
         Hours: "6am-1pm",
         Super: "Javier De Leon",
