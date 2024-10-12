@@ -223,6 +223,8 @@ const residential = [
     },
     {
         Address: "2828 Broadway",
+        Latitude: 40.80381183107239,
+        Longitude: -73.96641686396576,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -238,6 +240,8 @@ const residential = [
     },
     {
         Address: "29 Claremont Avenue",
+        Latitude: 40.80986415364525,
+        Longitude: -73.96424548989269,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -253,6 +257,8 @@ const residential = [
     },
     {
         Address: "3260 Henry Hudson Parkway",
+        Latitude: 40.886037478089904,
+        Longitude: -73.91251329063313,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
