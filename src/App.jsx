@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import residential from "./residentials";
 import './App.css';
+import Map from './components/map.jsx';
 
 const phone = "\u{260E}";
 const cellPhone = "\u{1F4F1}";
@@ -15,7 +16,7 @@ function App() {
     const lowerCaseQuery = query.toLowerCase();
     const uniqueProperties = new Set();
 
-    return residential.filter(property => {
+    return residential.filter((property) => {
       const lowerCaseAddress = property.Address.toLowerCase();
       const lowerCaseSuper = property.Super.toLowerCase();
 
@@ -34,100 +35,36 @@ function App() {
   }, []);
 
   // Add address to the selected routes
-  function addAddress(address) {
-    if (!selectedRoutes.includes(address)) {
-      setSelectedRoutes([...selectedRoutes, address]);
-    } else {
-      alert("This address is already in the route.");
-    }
-  }
+  const addAddress = useCallback((address) => {
+    setSelectedRoutes((prevRoutes) =>
+      prevRoutes.includes(address)
+        ? (alert("This address is already in the route."), prevRoutes)
+        : [...prevRoutes, address]
+    );
+  }, []);
 
-  function HandleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const searchQuery = e.target.searchName.value;
-    const result = searchProperties(searchQuery);
-    setSearchResult(result);
-  }
-
-  async function getDistanceMatrix(addresses) {
-    const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY'; // Replace with your API key
-
-    // Prepare the addresses for the API request
-    const origins = addresses.join('|');
-    const destinations = addresses.join('|');
-
-    // URL for the Google Distance Matrix API
-    const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${origins}&destinations=${destinations}&key=${apiKey}&mode=driving`;
-
-    // Fetch the travel times between all addresses
-    const response = await fetch(url);
-    const data = await response.json();
-    return data.rows.map(row => row.elements.map(element => element.duration.value)); // Return travel times in seconds
-  }
-
-  // Nearest Neighbor Algorithm to find the fastest path
-  function findFastestPath(travelTimes) {
-    const n = travelTimes.length;
-    const visited = Array(n).fill(false);
-    const path = [];
-    let totalTravelTime = 0;
-
-    let currentLocation = 0; // Start from the first address
-    visited[currentLocation] = true;
-    path.push(currentLocation);
-
-    for (let step = 1; step < n; step++) {
-      let nextLocation = -1;
-      let shortestTime = Infinity;
-
-      // Find the nearest unvisited location
-      for (let i = 0; i < n; i++) {
-        if (!visited[i] && travelTimes[currentLocation][i] < shortestTime) {
-          nextLocation = i;
-          shortestTime = travelTimes[currentLocation][i];
-        }
-      }
-
-      visited[nextLocation] = true;
-      path.push(nextLocation);
-      totalTravelTime += shortestTime;
-      currentLocation = nextLocation;
+    if (!search.trim()) {
+      const result = searchProperties(search);
+      setSearchResult(result);
+      alert("Please enter a valid search query.");
+      return;
     }
-
-    return { path, totalTravelTime };
-  }
-
-  async function getFastestRoute(addresses) {
-    // 1. Get the distance matrix
-    const travelTimes = await getDistanceMatrix(addresses);
-
-    // 2. Find the optimal path using nearest neighbor algorithm
-    const { path, totalTravelTime } = findFastestPath(travelTimes);
-
-    // Convert path indices back to addresses
-    const orderedAddresses = path.map(index => addresses[index]);
-
-    return { orderedAddresses, totalTravelTime };
-  }
-
-  // Example usage
-  const addresses = [...selectedRoutes];
-
-  getFastestRoute(addresses).then(result => {
-    console.log('Optimal Route:', result.orderedAddresses);
-    console.log('Total Travel Time (in seconds):', result.totalTravelTime);
-  });
-
+    const result = searchProperties(search);
+    setSearchResult(result);
+  };
 
   useEffect(() => {
-    console.log('selected routes', selectedRoutes);
+    console.log('Selected routes:', selectedRoutes);
   }, [selectedRoutes]);
 
   return (
     <div>
-      <form className="searchForm" onSubmit={HandleSubmit}>
-        <label>Search</label>
+      <form className="searchForm" onSubmit={handleSubmit}>
+        <label htmlFor="searchName">Search</label>
         <input
+          id="searchName"
           type="text"
           name="searchName"
           value={search}
@@ -135,6 +72,8 @@ function App() {
         />
         <button type="submit">Submit</button>
       </form>
+
+      <Map />
 
       <h2>Route</h2>
       {selectedRoutes.map((item, index) => (
@@ -145,9 +84,15 @@ function App() {
         {searchResult.length > 0 ? (
           searchResult.map((item) => (
             <div key={`${item.Address}-${item.Super}`} className="result-card">
-              <img src={item.image} alt={`Image of ${item.Super}`} className="result-image" />
+              <img
+                src={item.image}
+                alt={`Image of ${item.Super}`}
+                className="result-image"
+              />
               <h4>{item.Super}</h4>
-              <button onClick={() => addAddress(item.Address)}>Add Address To Route</button>
+              <button onClick={() => addAddress(item.Address)}>
+                Add Address To Route
+              </button>
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.Address)}`}
                 target="_blank"
@@ -165,17 +110,21 @@ function App() {
                 {phone}
                 <a href={`tel:${item.Super_Phone}`}>{item.Super_Phone}</a>
               </div>
-              <hr></hr>
+              <hr />
               <div>
                 <h3>Backup Super</h3>
                 <h4>{item.Backup_Super}</h4>
                 <div>
                   {cellPhone}
-                  <a href={`tel:${item.Backup_Super_Cell}`}>{item.Backup_Super_Cell}</a>
+                  <a href={`tel:${item.Backup_Super_Cell}`}>
+                    {item.Backup_Super_Cell}
+                  </a>
                 </div>
                 <div>
                   {phone}
-                  <a href={`tel:${item.Backup_Super_Phone}`}>{item.Backup_Super_Phone}</a>
+                  <a href={`tel:${item.Backup_Super_Phone}`}>
+                    {item.Backup_Super_Phone}
+                  </a>
                 </div>
               </div>
             </div>
