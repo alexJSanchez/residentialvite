@@ -19,6 +19,8 @@ const residential = [
     },
     {
         Address: "110 Morningside Drive",
+        Latitude: 40.809760,
+        Longitude: -73.957580,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -34,6 +36,8 @@ const residential = [
     },
     {
         Address: "124 La Salle Street",
+        Latitude: 40.813770,
+        Longitude: -73.960400,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -49,6 +53,8 @@ const residential = [
     },
     {
         Address: "130 Morningside Drive",
+        Latitude: 40.81052546190172,
+        Longitude: -73.9578871201776,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -64,6 +70,8 @@ const residential = [
     },
     {
         Address: "15 Claremont Avenue",
+        Latitude: 40.809226574863885,
+        Longitude: -73.96474999350141,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -79,6 +87,8 @@ const residential = [
     },
     {
         Address: "150 Claremont Avenue",
+        Latitude: 40.81340284364879,
+        Longitude: -73.96114639540843,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -94,6 +104,8 @@ const residential = [
     },
     {
         Address: "191 Claremont Avenue",
+        Latitude: 40.81524787995305,
+        Longitude: -73.96042187989106,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -109,6 +121,8 @@ const residential = [
     },
     {
         Address: "195 Claremont Avenue",
+        Latitude: 40.81549321910518,
+        Longitude: -73.96019399413764,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -124,6 +138,8 @@ const residential = [
     },
     {
         Address: "21 Claremont Avenue",
+        Latitude: 40.80953851873881,
+        Longitude: -73.96463617800718,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -139,6 +155,8 @@ const residential = [
     },
     {
         Address: "25 Claremont Avenue",
+        Latitude: 40.809635234752825,
+        Longitude: -73.96427380584093,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -154,6 +172,8 @@ const residential = [
     },
     {
         Address: "253 West 109th Street",
+        Latitude: 40.80362543182983,
+        Longitude: -73.96650509286891,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -169,6 +189,8 @@ const residential = [
     },
     {
         Address: "259 West 109th Street",
+        Latitude: 40.80362338311894,
+        Longitude: -73.96671392397926,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -184,6 +206,8 @@ const residential = [
     },
     {
         Address: "2700 Broadway",
+        Latitude: 40.79929284496157,
+        Longitude: -73.9680093084836,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
