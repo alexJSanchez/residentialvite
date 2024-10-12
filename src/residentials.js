@@ -2,6 +2,8 @@ import { images } from './images/images';
 const residential = [
     {
         Address: "100 Morningside Drive",
+        Latitude: 40.809010,
+        Longitude: -73.957780,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Chong, Deidre L",
         Portfolio_Manager_Email: "dc2014@columbia.edu ",
