@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import L from 'leaflet'; // Ensure leaflet is installed: `npm install leaflet`
+import L, { marker } from 'leaflet'; // Ensure leaflet is installed: `npm install leaflet`
 import 'leaflet/dist/leaflet.css'; // Leaflet CSS is required
 
 function Map() {
@@ -9,11 +9,11 @@ function Map() {
             center: [51.505, -0.09],
             zoom: 13,
         });
-
+        var marker = L.marker([51.5, -0.09]).addTo(map);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        }).addTo(map);
+        }).addTo(map, marker);
 
         return () => {
             map.remove(); // Cleanup on component unmount to prevent memory leaks
