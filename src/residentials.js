@@ -274,6 +274,8 @@ const residential = [
     },
     {
         Address: "35 Claremont Avenue",
+        Latitude: 40.80996917128854,
+        Longitude: -73.96415622008607,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -289,6 +291,8 @@ const residential = [
     },
     {
         Address: "362 Riverside Drive",
+        Latitude: 40.804086287368385,
+        Longitude: -73.96858713568757,
         Director: "Director, CC Housing",
         Super: "Pelissier, Ronald",
         Super_Email: "rp9@columbia.edu",
@@ -302,6 +306,8 @@ const residential = [
     },
     {
         Address: "39 Claremont Avenue",
+        Latitude: 40.81003082100933,
+        Longitude: -73.96418486401353,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -317,6 +323,8 @@ const residential = [
     },
     {
         Address: "400 West 119th Street",
+        Latitude: 40.808223994098654,
+        Longitude: -73.95842076586817,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -333,6 +341,8 @@ const residential = [
     },
     {
         Address: "401 West 118th Street",
+        Latitude: 40.807781436796624,
+        Longitude: -73.95857319413419,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Chong, Deidre L",
         Portfolio_Manager_Email: "dc2014@columbia.edu ",
