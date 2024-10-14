@@ -899,6 +899,8 @@ const residential = [
     },
     {
         Address: "450 Riverside Drive",
+        Latitude: 40.809309359444235,
+        Longitude: -73.9650412462132,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -914,6 +916,8 @@ const residential = [
     },
     {
         Address: "452 Riverside Drive",
+        Latitude: 40.809717768751206,
+        Longitude: -73.96480429965142,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -929,6 +933,8 @@ const residential = [
     },
     {
         Address: "454 Riverside Drive",
+        Latitude: 40.80986693855919,
+        Longitude: -73.96472578188424,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -944,6 +950,8 @@ const residential = [
     },
     {
         Address: "455 Central Park West",
+        Latitude: 40.797803076436345,
+        Longitude: -73.96073820126594,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -954,6 +962,8 @@ const residential = [
     },
     {
         Address: "456 Riverside Drive",
+        Latitude: 40.810003368569134,
+        Longitude: -73.9646263174395,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -969,6 +979,8 @@ const residential = [
     },
     {
         Address: "460 Riverside Drive",
+        Latitude: 40.810146108282055,
+        Longitude: -73.96452099969142,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -984,6 +996,8 @@ const residential = [
     },
     {
         Address: "464 Riverside Drive",
+        Latitude: 40.810296842546926,
+        Longitude: -73.96446584188297,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -999,6 +1013,8 @@ const residential = [
     },
     {
         Address: "47 Claremont Avenue",
+        Latitude: 40.810216120119826,
+        Longitude: -73.96397427623661,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -1014,6 +1030,8 @@ const residential = [
     },
     {
         Address: "500 West 122nd Street",
+        Latitude: 40.810685764521324,
+        Longitude: -73.95875806705186,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1029,6 +1047,8 @@ const residential = [
     },
     {
         Address: "502 West 113th Street",
+        Latitude: 40.8049173565893,
+        Longitude: -73.96310775715826,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1044,6 +1064,8 @@ const residential = [
     },
     {
         Address: "502 West 122nd Street",
+        Latitude: 40.81079920393316,
+        Longitude: -73.95889332837356,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1059,6 +1081,8 @@ const residential = [
     },
     {
         Address: "503 West 121st Street",
+        Latitude: 40.810446244624664,
+        Longitude: -73.95920385612058,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1074,6 +1098,8 @@ const residential = [
     },
     {
         Address: "506 West 113th Street",
+        Latitude: 40.80503726897794,
+        Longitude: -73.96324820191474,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1089,6 +1115,8 @@ const residential = [
     },
     {
         Address: "506 West 122nd Street",
+        Latitude: 40.810763485187145,
+        Longitude: -73.95913207605957,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1104,6 +1132,8 @@ const residential = [
     },
     {
         Address: "507 West 113th Street",
+        Latitude: 40.805310946381255,
+        Longitude: -73.96286862284508,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1118,6 +1148,8 @@ const residential = [
     },
     {
         Address: "509 West 112th Street",
+        Latitude: 40.804804373761,
+        Longitude: -73.96364955916947,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1131,6 +1163,8 @@ const residential = [
     },
     {
         Address: "511 West 112th Street",
+        Latitude: 40.80488477416508,
+        Longitude: -73.96379690859234,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1144,6 +1178,8 @@ const residential = [
     },
     {
         Address: "511 West 113th Street",
+        Latitude: 40.80533668437112,
+        Longitude: -73.96315153458401,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1159,6 +1195,8 @@ const residential = [
     },
     {
         Address: "512 West 112th Street",
+        Latitude: 40.80452746219368,
+        Longitude: -73.96396288566956,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1174,6 +1212,8 @@ const residential = [
     },
     {
         Address: "514 West 114th Street",
+        Latitude: 40.805699495210476,
+        Longitude: -73.96297308836559,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1189,6 +1229,8 @@ const residential = [
     },
     {
         Address: "518 West 111th Street",
+        Latitude: 40.80397433979495,
+        Longitude: -73.9646276711957,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1205,6 +1247,8 @@ const residential = [
     },
     {
         Address: "519 West 121st Street",
+        Latitude: 40.81080783109465,
+        Longitude: -73.9600500901926,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1220,6 +1264,8 @@ const residential = [
     },
     {
         Address: "520 West 112th Street",
+        Latitude: 40.80458850682244,
+        Longitude: -73.96429394830733,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1235,6 +1281,8 @@ const residential = [
     },
     {
         Address: "520 West 114th Street",
+        Latitude: 40.805799907861655,
+        Longitude: -73.96320949453462,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1250,6 +1298,8 @@ const residential = [
     },
     {
         Address: "520 West 122nd Street",
+        Latitude: 40.81111017200374,
+        Longitude: -73.95983662349272,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1265,6 +1315,8 @@ const residential = [
     },
     {
         Address: "521 West 111th Street",
+        Latitude: 40.804338668246864,
+        Longitude: -73.96441434546651,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1280,6 +1332,8 @@ const residential = [
     },
     {
         Address: "521 West 112th Street",
+        Latitude: 40.80501144414733,
+        Longitude: -73.96398451975693,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1295,6 +1349,8 @@ const residential = [
     },
     {
         Address: "522 West 112th Street",
+        Latitude: 40.804727160931776,
+        Longitude: -73.96443578958106,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1310,6 +1366,8 @@ const residential = [
     },
     {
         Address: "523 West 112th Street",
+        Latitude: 40.805107194839294,
+        Longitude: -73.96423927403168,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1323,6 +1381,8 @@ const residential = [
     },
     {
         Address: "524 West 114th Street",
+        Latitude: 40.80581711274723,
+        Longitude: -73.96339772138342,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1338,6 +1398,8 @@ const residential = [
     },
     {
         Address: "524 West 122nd Street",
+        Latitude: 40.8112761147727,
+        Longitude: -73.96005152019269,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1353,6 +1415,8 @@ const residential = [
     },
     {
         Address: "525 West 113th Street",
+        Latitude: 40.80554234171769,
+        Longitude: -73.96353062177694,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1368,6 +1432,8 @@ const residential = [
     },
     {
         Address: "526 West 112th Street",
+        Latitude: 40.80479825217024,
+        Longitude: -73.96458475022078,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1383,6 +1449,8 @@ const residential = [
     },
     {
         Address: "526 West 113th Street",
+        Latitude: 40.805184750281924,
+        Longitude: -73.96365590020496,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1398,6 +1466,8 @@ const residential = [
     },
     {
         Address: "526 West 122nd Street",
+        Latitude: 40.81123708190067,
+        Longitude: -73.96016527424783,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1413,6 +1483,8 @@ const residential = [
     },
     {
         Address: "527 West 121st Street",
+        Latitude: 40.81097352702593,
+        Longitude: -73.96048645734292,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1428,6 +1500,8 @@ const residential = [
     },
     {
         Address: "528 Riverside Drive",
+        Latitude: 40.8144907762294,
+        Longitude: -73.96122605159378,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -1443,6 +1517,8 @@ const residential = [
     },
     {
         Address: "528 West 114th Street",
+        Latitude: 40.80598245259854,
+        Longitude: -73.96356314331737,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1458,6 +1534,8 @@ const residential = [
     },
     {
         Address: "529 West 111th Street",
+        Latitude: 40.80439735806118,
+        Longitude: -73.96480960564716,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1473,6 +1551,8 @@ const residential = [
     },
     {
         Address: "530 Riverside Drive",
+        Latitude: 40.81474836065853,
+        Longitude: -73.96111676034498,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -1488,6 +1568,8 @@ const residential = [
     },
     {
         Address: "530 West 112th Street",
+        Latitude: 40.8048631661949,
+        Longitude: -73.96474914562191,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1503,6 +1585,8 @@ const residential = [
     },
     {
         Address: "530 West 113th Street",
+        Latitude: 40.805297803947035,
+        Longitude: -73.9638374206067,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1518,6 +1602,8 @@ const residential = [
     },
     {
         Address: "530 West 114th Street",
+        Latitude: 40.80599333987747,
+        Longitude: -73.96362254991615,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1533,6 +1619,8 @@ const residential = [
     },
     {
         Address: "530 West 122nd Street",
+        Latitude: 40.811373028147706,
+        Longitude: -73.9603169155102,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1548,6 +1636,8 @@ const residential = [
     },
     {
         Address: "531 West 112th Street",
+        Latitude: 40.805163582626825,
+        Longitude: -73.96459495833419,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1563,6 +1653,8 @@ const residential = [
     },
     {
         Address: "535 West 111th Street",
+        Latitude: 40.804627058004236,
+        Longitude: -73.96496771450438,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1578,6 +1670,8 @@ const residential = [
     },
     {
         Address: "535 West 112th Street",
+        Latitude: 40.805270669084834,
+        Longitude: -73.96474679303535,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1593,6 +1687,8 @@ const residential = [
     },
     {
         Address: "535 West 113th Street",
+        Latitude: 40.8057449486741,
+        Longitude: -73.96383883118587,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1608,6 +1704,8 @@ const residential = [
     },
     {
         Address: "536 West 113th Street",
+        Latitude: 40.80534968287118,
+        Longitude: -73.96406244775896,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1623,6 +1721,8 @@ const residential = [
     },
     {
         Address: "539 West 112th Street",
+        Latitude: 40.80534133952016,
+        Longitude: -73.96494703234617,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1638,6 +1738,8 @@ const residential = [
     },
     {
         Address: "540 West 112th Street",
+        Latitude: 40.80509945780565,
+        Longitude: -73.96512688716616,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1653,6 +1755,8 @@ const residential = [
     },
     {
         Address: "540 West 113th Street",
+        Latitude: 40.80542213156291,
+        Longitude: -73.96420297522322,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1668,6 +1772,8 @@ const residential = [
     },
     {
         Address: "540 West 122nd Street",
+        Latitude: 40.81156080628915,
+        Longitude: -73.96095546182482,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Ribeiro, Luis",
         Portfolio_Manager_Email: "lr3129@columbia.edu ",
@@ -1683,6 +1789,8 @@ const residential = [
     },
     {
         Address: "541 West 113th Street",
+        Latitude: 40.805821136082166,
+        Longitude: -73.96412177421732,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1698,6 +1806,8 @@ const residential = [
     },
     {
         Address: "542 West 112th Street",
+        Latitude: 40.80520875489052,
+        Longitude: -73.96545607521358,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1713,6 +1823,8 @@ const residential = [
     },
     {
         Address: "542 West 113th Street",
+        Latitude: 40.80544567582611,
+        Longitude: -73.96425710170993,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1728,6 +1840,8 @@ const residential = [
     },
     {
         Address: "544 West 110th Street",
+        Latitude: 40.80363402679876,
+        Longitude: -73.9658471573125,
         Director: ", ",
         Portfolio_Manager: ", ",
         Super: "Rodriguez, Jaime",
@@ -1741,6 +1855,8 @@ const residential = [
     },
     {
         Address: "544 West 113th Street",
+        Latitude: 40.80546795889186,
+        Longitude: -73.96432820042509,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1756,6 +1872,8 @@ const residential = [
     },
     {
         Address: "544 West 114th Street",
+        Latitude: 40.80615799388069,
+        Longitude: -73.9639717056197,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1771,6 +1889,8 @@ const residential = [
     },
     {
         Address: "546 West 113th Street",
+        Latitude: 40.805494539740934,
+        Longitude: -73.96437193485765,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1786,6 +1906,8 @@ const residential = [
     },
     {
         Address: "547 Riverside Drive",
+        Latitude: 40.81511725891156,
+        Longitude: -73.96091579008565,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -1801,6 +1923,8 @@ const residential = [
     },
     {
         Address: "548 Riverside Drive",
+        Latitude: 40.81529743132993,
+        Longitude: -73.96072691583892,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -1816,6 +1940,8 @@ const residential = [
     },
     {
         Address: "549 Riverside Drive",
+        Latitude: 40.81556462521516,
+        Longitude: -73.96047583516624,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -1831,6 +1957,8 @@ const residential = [
     },
     {
         Address: "554 West 113th Street",
+        Latitude: 40.805593099177834,
+        Longitude: -73.96458843168892,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1846,6 +1974,8 @@ const residential = [
     },
     {
         Address: "558 West 113th Street",
+        Latitude: 40.80564232296967,
+        Longitude: -73.96470591962132,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1861,6 +1991,8 @@ const residential = [
     },
     {
         Address: "560 Riverside Drive",
+        Latitude: 40.81728077844418,
+        Longitude: -73.96033171309779,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Chen, Chih",
         Portfolio_Manager_Email: "cc4950@columbia.edu",
@@ -1876,6 +2008,8 @@ const residential = [
     },
     {
         Address: "560 West 113th Street",
+        Latitude: 40.80566327140076,
+        Longitude: -73.964762956049,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -1891,6 +2025,8 @@ const residential = [
     },
     {
         Address: "600 West 113th Street",
+        Latitude: 40.80616816797362,
+        Longitude: -73.96578691204414,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1905,6 +2041,8 @@ const residential = [
     },
     {
         Address: "600 West 114th Street",
+        Latitude: 40.80680150913681,
+        Longitude: -73.96530147583854,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1920,6 +2058,8 @@ const residential = [
     },
     {
         Address: "601 West 112th Street",
+        Latitude: 40.80580830175719,
+        Longitude: -73.9661951917708,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1935,6 +2075,8 @@ const residential = [
     },
     {
         Address: "601 West 113th Street",
+        Latitude: 40.80640677187822,
+        Longitude: -73.96569029528085,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1950,6 +2092,8 @@ const residential = [
     },
     {
         Address: "601 West 115th Street",
+        Latitude: 40.80777141937736,
+        Longitude: -73.96465753292189,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -1965,6 +2109,8 @@ const residential = [
     },
     {
         Address: "604 West 115th Street",
+        Latitude: 40.807426098396434,
+        Longitude: -73.96508184065472,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -1980,6 +2126,8 @@ const residential = [
     },
     {
         Address: "605 West 113th Street",
+        Latitude: 40.80660632302495,
+        Longitude: -73.96588442172559,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -1995,6 +2143,8 @@ const residential = [
     },
     {
         Address: "606 West 116th Street",
+        Latitude: 40.80813387743102,
+        Longitude: -73.96472091505484,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2010,6 +2160,8 @@ const residential = [
     },
     {
         Address: "608 West 113th Street",
+        Latitude: 40.80627317245493,
+        Longitude: -73.96616623178747,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -2025,6 +2177,8 @@ const residential = [
     },
     {
         Address: "608 West 114th Street",
+        Latitude: 40.80688309579312,
+        Longitude: -73.96572023104969,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -2040,6 +2194,8 @@ const residential = [
     },
     {
         Address: "610 West 113th Street",
+        Latitude: 40.80628607257406,
+        Longitude: -73.96628351641823,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -2055,6 +2211,8 @@ const residential = [
     },
     {
         Address: "610 West 114th Street",
+        Latitude: 40.80698079585496,
+        Longitude: -73.9657072388352,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -2070,6 +2228,8 @@ const residential = [
     },
     {
         Address: "610 West 115th Street",
+        Latitude: 40.80767565254356,
+        Longitude: -73.9653754270395,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2085,6 +2245,8 @@ const residential = [
     },
     {
         Address: "610 West 116th Street",
+        Latitude: 40.808190337323964,
+        Longitude: -73.96492888108293,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2100,6 +2262,8 @@ const residential = [
     },
     {
         Address: "612 West 114th Street",
+        Latitude: 40.80699892664524,
+        Longitude: -73.96575078668342,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -2115,6 +2279,8 @@ const residential = [
     },
     {
         Address: "614 West 113th Street",
+        Latitude: 40.80639572077383,
+        Longitude: -73.96632973247296,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -2130,6 +2296,8 @@ const residential = [
     },
     {
         Address: "614-616 West 114th Street",
+        Latitude: 40.80688572104998,
+        Longitude: -73.96575569106022,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Alexander, Duane",
         Portfolio_Manager_Email: "da2934@columbia.edu ",
@@ -2145,6 +2313,8 @@ const residential = [
     },
     {
         Address: "617 West 115th Street",
+        Latitude: 40.8080126387854,
+        Longitude: -73.96542509695408,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2160,6 +2330,8 @@ const residential = [
     },
     {
         Address: "629 West 115th Street",
+        Latitude: 40.80813531982684,
+        Longitude: -73.96559125041733,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2175,6 +2347,8 @@ const residential = [
     },
     {
         Address: "74 West 108th Street",
+        Latitude: 40.80032009680112,
+        Longitude: -73.96167588336444,
         Director: "Thompson, Nicole",
         Portfolio_Manager: "Santoro, Jennifer",
         Portfolio_Manager_Email: "js6068@columbia.edu ",
@@ -2190,6 +2364,8 @@ const residential = [
     },
     {
         Address: "90 Morningside Drive",
+        Latitude: 40.80850208905336,
+        Longitude: -73.95814153392207,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Chong, Deidre L",
         Portfolio_Manager_Email: "dc2014@columbia.edu ",
@@ -2202,8 +2378,11 @@ const residential = [
         Backup_Super_Cell: "(917) 817-3328",
         Admin: "Sablon, Betty",
         image: images.Cassiliano_Gary
-    }, {
+    },
+    {
         Address: "415 West 120th Street",
+        Latitude: 40.809186030592684,
+        Longitude: -73.958194590459,
         Director: ", ",
         Portfolio_Manager: ", ",
         Super: ", ",
@@ -2212,6 +2391,8 @@ const residential = [
     },
     {
         Address: "455 Central Park West",
+        Latitude: 40.797800340271486,
+        Longitude: -73.96073720709936,
         Director: "Falcon, Nelson",
         Portfolio_Manager: "Arbaje, Marah",
         Portfolio_Manager_Email: "ma224@columbia.edu",
@@ -2222,6 +2403,8 @@ const residential = [
     },
     {
         Address: "434 West 120th Street",
+        Latitude: 40.80897745255543,
+        Longitude: -73.95898911010732,
         Director: "Ryder, Cathleen",
         Portfolio_Manager: "Chong, Deidre L",
         Portfolio_Manager_Email: "dc2014@columbia.edu ",
