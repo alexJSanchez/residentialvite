@@ -3,6 +3,7 @@ import residential from "./residentials";
 import './App.css';
 import Map from './components/map.jsx';
 
+
 const phone = "\u{260E}";
 const cellPhone = "\u{1F4F1}";
 
@@ -10,7 +11,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const [selectedRoutes, setSelectedRoutes] = useState([]);
-
+  const [seletedLocation, setSelectedlocation] = useState("")
   // Search function for both address and name
   const searchProperties = useCallback((query) => {
     const lowerCaseQuery = query.toLowerCase();
@@ -35,11 +36,11 @@ function App() {
   }, []);
 
   // Add address to the selected routes
-  const addAddress = useCallback((address) => {
+  const addAddress = useCallback((address, Longitude) => {
     setSelectedRoutes((prevRoutes) =>
       prevRoutes.includes(address)
         ? (alert("This address is already in the route."), prevRoutes)
-        : [...prevRoutes, address]
+        : [...prevRoutes, [address, Longitude]]
     );
   }, []);
 
@@ -73,11 +74,14 @@ function App() {
         <button type="submit">Submit</button>
       </form>
 
-      <Map />
+      <Map message={seletedLocation} />
 
       <h2>Route</h2>
       {selectedRoutes.map((item, index) => (
-        <p key={index}>{item}</p>
+        <div>
+          <p key={index}>{item}</p>
+
+        </div>
       ))}
 
       <div className="results-container">
@@ -90,7 +94,7 @@ function App() {
                 className="result-image"
               />
               <h4>{item.Super}</h4>
-              <button onClick={() => addAddress(item.Address)}>
+              <button onClick={() => addAddress(item.Address, item.Longitude)}>
                 Add Address To Route
               </button>
               <a
