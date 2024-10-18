@@ -36,11 +36,11 @@ function App() {
   }, []);
 
   // Add address to the selected routes
-  const addAddress = useCallback((address, Longitude) => {
+  const addAddress = useCallback((address, Longitude, Latitude) => {
     setSelectedRoutes((prevRoutes) =>
       prevRoutes.includes(address)
         ? (alert("This address is already in the route."), prevRoutes)
-        : [...prevRoutes, [address, Longitude]]
+        : [...prevRoutes, [address, Longitude, Latitude]]
     );
   }, []);
 
@@ -78,8 +78,9 @@ function App() {
 
       <h2>Route</h2>
       {selectedRoutes.map((item, index) => (
-        <div>
-          <p key={index}>{item}</p>
+        <div key={index}>
+
+          <button onClick={(e) => setSelectedlocation([item[0], item[1], item[2]])}>{item[0]}</button>
 
         </div>
       ))}
@@ -94,7 +95,7 @@ function App() {
                 className="result-image"
               />
               <h4>{item.Super}</h4>
-              <button onClick={() => addAddress(item.Address, item.Longitude)}>
+              <button onClick={() => addAddress(item.Address, item.Longitude, item.Latitude)}>
                 Add Address To Route
               </button>
               <a
