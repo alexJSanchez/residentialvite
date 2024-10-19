@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const [selectedRoutes, setSelectedRoutes] = useState([]);
-  const [seletedLocation, setSelectedlocation] = useState("")
+  const [seletedLocation, setSelectedlocation] = useState([])
   // Search function for both address and name
   const searchProperties = useCallback((query) => {
     const lowerCaseQuery = query.toLowerCase();

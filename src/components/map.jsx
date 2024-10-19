@@ -3,49 +3,46 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 function Map({ message }) {
-    const mapRef = useRef(null); // Create a ref to hold the map instance
+    const mapRef = useRef(null);
+    const markerRef = useRef(null);
+
+    // Default coordinates
+    const defaultCoordinates = [40.80933859455395, -73.95250302065439];
+    const mark = message && message.length >= 3 ? [message[1], message[2]] : defaultCoordinates;
 
     useEffect(() => {
-        // Initialize map only once
+        // Initialize the map only once
         if (!mapRef.current) {
-            mapRef.current = L.map('map').setView([40.8105, -73.9535], 13);
+            mapRef.current = L.map('map').setView(mark, 13);
+
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             }).addTo(mapRef.current);
+        } else {
+
+            // Update map view if the coordinates change
+            mapRef.current.setView(mark);
         }
 
-        // Update map view if message prop is a valid LatLng
-        if (message) {
-            const [lat, lon] = typeof message === 'string' ? getLatLonFromAddress(message) : message;
-
-            if (typeof lat === 'number' && typeof lon === 'number') {
-                mapRef.current.setView([lat, lon], 13);
-            } else {
-                console.error('Invalid coordinates provided:', message);
-            }
+        // Add marker if not already added
+        if (!markerRef.current) {
+            markerRef.current = L.marker(mark).addTo(mapRef.current);
+        } else {
+            // Update marker position
+            markerRef.current.setLatLng(mark);
         }
 
         // Cleanup on unmount
         return () => {
-            if (mapRef.current) {
-                mapRef.current.remove();
-                mapRef.current = null;
+            if (markerRef.current) {
+                mapRef.current.removeLayer(markerRef.current);
+                markerRef.current = null;
             }
         };
-    }, [message]); // Effect depends on the message prop
+    }, [message]); // Run effect whenever `message` changes
 
     return <div id="map" style={{ height: '400px', width: '100%' }} />;
-}
-
-// Dummy function to mimic address geocoding
-function getLatLonFromAddress(address) {
-    // You'd typically call a geocoding API here.
-    // For now, return example coordinates if address matches
-    if (address === "124 La Salle Street") {
-        return [40.8105, -73.9604]; // Example coordinates
-    }
-    return [null, null]; // Invalid
 }
 
 export default Map;
