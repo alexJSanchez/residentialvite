@@ -13,15 +13,16 @@ function Map({ message }) {
     useEffect(() => {
         // Initialize the map only once
         if (!mapRef.current) {
-            mapRef.current = L.map('map').setView(mark, 13);
+            mapRef.current = L.map('map').setView(defaultCoordinates, 13);
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             }).addTo(mapRef.current);
-        } else {
+        }
 
-            // Update map view if the coordinates change
+        // Update map view if the coordinates change
+        if (mapRef.current) {
             mapRef.current.setView(mark);
         }
 
@@ -40,7 +41,7 @@ function Map({ message }) {
                 markerRef.current = null;
             }
         };
-    }, [message]); // Run effect whenever `message` changes
+    }, [mark]); // Run effect whenever `mark` changes
 
     return <div id="map" style={{ height: '400px', width: '100%' }} />;
 }
