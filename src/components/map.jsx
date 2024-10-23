@@ -3,47 +3,46 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 function Map({ message }) {
-    const mapRef = useRef(null);
-    const markerRef = useRef(null);
-
-    // Default coordinates
-    const defaultCoordinates = [40.80933859455395, -73.95250302065439];
+    // Default coordinates for the map (center of London for example)
+    const defaultCoordinates = [40.80933859455395, -73.95250302065439]; // Your default coordinates
     const mark = message && message.length >= 3 ? [message[1], message[2]] : defaultCoordinates;
 
-    useEffect(() => {
-        // Initialize the map only once
-        if (!mapRef.current) {
-            mapRef.current = L.map('map').setView(defaultCoordinates, 13);
+    // Ref to store the map instance
+    const mapRef = useRef(null);
+    const mapContainerRef = useRef(null); // For map container reference
 
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    useEffect(() => {
+        // Check if the map already exists, so we don’t reinitialize it
+        if (!mapRef.current) {
+            // Initialize the map and set the view
+            mapRef.current = L.map(mapContainerRef.current).setView(defaultCoordinates, 13);
+
+            // Add OpenStreetMap tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             }).addTo(mapRef.current);
         }
 
-        // Update map view if the coordinates change
-        if (mapRef.current) {
-            mapRef.current.setView(mark);
+        // Clear existing marker (if any)
+        if (mapRef.current.markerLayer) {
+            mapRef.current.removeLayer(mapRef.current.markerLayer);
         }
 
-        // Add marker if not already added
-        if (!markerRef.current) {
-            markerRef.current = L.marker(mark).addTo(mapRef.current);
-        } else {
-            // Update marker position
-            markerRef.current.setLatLng(mark);
-        }
+        // Add a new marker at the location from `message`
+        const marker = L.marker(mark).addTo(mapRef.current);
+        mapRef.current.markerLayer = marker;
 
-        // Cleanup on unmount
-        return () => {
-            if (markerRef.current) {
-                mapRef.current.removeLayer(markerRef.current);
-                markerRef.current = null;
-            }
-        };
-    }, [mark]); // Run effect whenever `mark` changes
+        // Center the map on the new marker location
+        mapRef.current.setView(mark, 13);
 
-    return <div id="map" style={{ height: '400px', width: '100%' }} />;
+    }, [mark]); // Effect runs whenever `mark` changes
+
+    return (
+        <div>
+            <div ref={mapContainerRef} style={{ height: '400px', width: '100%' }}></div>
+        </div>
+    );
 }
 
 export default Map;
