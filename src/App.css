@@ -37,4 +37,6 @@
   }
 }
 
-#map { height: 180px; }
+.leaflet-container{
+  height: 400px; 
+}
