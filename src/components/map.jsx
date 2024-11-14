@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "../App.css";
 import locationImage from '../images/location.png'
+import TrucklocationImage from '../images/truck.png'
 import { Icon } from 'leaflet';
 import "leaflet/dist/leaflet.css";
 
@@ -10,8 +11,12 @@ export default function Map({ message }) {
     const [error, setError] = useState(null);
 
     //Custome icon for map markers
-    const CustomIcon = new Icon({
+    const LocationCustomIcon = new Icon({
         iconUrl: locationImage, //icon url
+        iconSize: [28, 28], //size of icon
+    })
+    const TruckCustomIcon = new Icon({
+        iconUrl: TrucklocationImage, //icon url
         iconSize: [28, 28] //size of icon
     })
 
@@ -46,12 +51,14 @@ export default function Map({ message }) {
         markers.push({
             geocode: [message[2], message[1]],
             popUp: message[0],
+            image: LocationCustomIcon
         });
     }
     if (isValidCoordinate(location.latitude) && isValidCoordinate(location.longitude)) {
         markers.push({
             geocode: [location.latitude, location.longitude],
             popUp: 'MY TRUCK',
+            image: TruckCustomIcon
         });
     }
 
@@ -81,10 +88,11 @@ export default function Map({ message }) {
 
             {/* Render markers if they have valid coordinates */}
             {markers.map((marker, index) => (
-                <Marker key={index} position={marker.geocode} icon={CustomIcon}>
+                <Marker key={index} position={marker.geocode} icon={marker.image}>
                     <Popup>{marker.popUp}</Popup>
                 </Marker>
-            ))}
-        </MapContainer>
+            ))
+            }
+        </MapContainer >
     );
 }
