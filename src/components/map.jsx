@@ -1,11 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "../App.css";
+import locationImage from '../images/location.png'
+import { Icon } from 'leaflet';
 import "leaflet/dist/leaflet.css";
 
 export default function Map({ message }) {
     const [location, setLocation] = useState({ latitude: null, longitude: null });
     const [error, setError] = useState(null);
+
+    //Custome icon for map markers
+    const CustomIcon = new Icon({
+        iconUrl: locationImage, //icon url
+        iconSize: [28, 28] //size of icon
+    })
 
     // Get the user's location on mount
     useEffect(() => {
@@ -62,7 +70,7 @@ export default function Map({ message }) {
     const mapCenter = markers.length > 0 ? markers[0].geocode : initialCenter;
 
     return (
-        <MapContainer center={mapCenter} zoom={14}>
+        <MapContainer center={mapCenter} zoom={16}>
             {/* Update map center dynamically */}
             <MapUpdater center={mapCenter} />
 
@@ -73,7 +81,7 @@ export default function Map({ message }) {
 
             {/* Render markers if they have valid coordinates */}
             {markers.map((marker, index) => (
-                <Marker key={index} position={marker.geocode}>
+                <Marker key={index} position={marker.geocode} icon={CustomIcon}>
                     <Popup>{marker.popUp}</Popup>
                 </Marker>
             ))}
