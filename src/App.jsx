@@ -67,7 +67,13 @@ function App() {
     const result = searchProperties(search);
     setSearchResult(result);
   };
-
+  // Function to scroll back to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // This makes the scroll smooth
+    });
+  };
   // Log selected routes in the console whenever they change
   useEffect(() => {
     console.log('Selected routes:', selectedRoutes);
@@ -75,6 +81,10 @@ function App() {
 
   return (
     <div>
+      {/* Back to Top Button */}
+      <button className="back-to-top" onClick={scrollToTop}>
+        ↑ Back to Top
+      </button>
       {/* Search form for user input */}
       <form className="searchForm" onSubmit={handleSubmit}>
         <label htmlFor="searchName">Search</label>

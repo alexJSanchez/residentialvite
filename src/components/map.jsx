@@ -77,22 +77,24 @@ export default function Map({ message }) {
     const mapCenter = markers.length > 0 ? markers[0].geocode : initialCenter;
 
     return (
-        <MapContainer center={mapCenter} zoom={16}>
-            {/* Update map center dynamically */}
-            <MapUpdater center={mapCenter} />
+        <div>
+            <MapContainer center={mapCenter} zoom={16}>
+                {/* Update map center dynamically */}
+                <MapUpdater center={mapCenter} />
 
-            <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
+                <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
 
-            {/* Render markers if they have valid coordinates */}
-            {markers.map((marker, index) => (
-                <Marker key={index} position={marker.geocode} icon={marker.image}>
-                    <Popup>{marker.popUp}</Popup>
-                </Marker>
-            ))
-            }
-        </MapContainer >
+                {/* Render markers if they have valid coordinates */}
+                {markers.map((marker, index) => (
+                    <Marker key={index} position={marker.geocode} icon={marker.image}>
+                        <Popup>{marker.popUp}</Popup>
+                    </Marker>
+                ))
+                }
+            </MapContainer >
+        </div>
     );
 }
