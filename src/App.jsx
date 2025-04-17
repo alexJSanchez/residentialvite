@@ -81,7 +81,6 @@ function App() {
 
   return (
     <div>
-      <p>Hello iam here</p>
       {/* Back to Top Button */}
       <button className="back-to-top" onClick={scrollToTop}>
         ↑ Back to Top
