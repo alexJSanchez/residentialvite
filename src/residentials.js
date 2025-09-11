@@ -4002,7 +4002,7 @@ const residential = [
     Backup_Super: "Cruz, Jose",
     Backup_Super_Phone: "(212) 853-1961",
     Backup_Super_Cell: "(646) 891-6764",
-    Admin: "Manohar, Preyaa",
+    Admin: "Rivera, Luis",
     image: images.Parker_Bruce,
   },
   {
