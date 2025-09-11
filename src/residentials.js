@@ -2001,7 +2001,7 @@ const residential = [
     Backup_Super: "Gomez, Jose",
     Backup_Super_Phone: "(212) 851-7370 (Lobby) ",
     Backup_Super_Cell: "(646) 866-3325",
-    Admin: "Manohar, Preyaa",
+    Admin: "Rivera, Lisa",
     image: images.Santamaria_Ricardo,
   },
   {
