@@ -1219,7 +1219,7 @@ const residential = [
     Super: "Raspaldo Jr, Robert",
     Super_Email: "rr3140@columbia.edu",
     Super_Phone: "(212) 853-7212",
-    Super_Cell: "(917) 985 - 0022",
+    Super_Cell: "(917) 985-0022",
     Backup_Super: "Jimenez, Franklin",
     Backup_Super_Phone: "(212) 854-0499",
     Backup_Super_Cell: "(646) 957-2269",
